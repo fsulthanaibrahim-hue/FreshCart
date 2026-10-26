@@ -34,6 +34,7 @@ class BillSerializer(serializers.ModelSerializer):
             "subtotal",
             "gst_amount",
             "total",
+            "status",
             "created_at",
             "items",
         ]

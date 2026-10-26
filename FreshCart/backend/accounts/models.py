@@ -8,7 +8,7 @@ class Profile(models.Model):
         on_delete=models.CASCADE,
         related_name="profile",
     )
-    phone = models.CharField(max_length=15)
+    phone = models.CharField(max_length=15, blank=True, default="")
 
     def __str__(self):
         return self.user.username
